@@ -1,0 +1,8 @@
+SSH
+===
+user: adc201519
+pass: aiphe0iePh5i
+
+
+profiling: medir el rendimiento/perfomance de un codigo en un determinado hw
+bloking_write : setear el buffer para que sea bloqueante, se bloquea mientras esta escribiendo

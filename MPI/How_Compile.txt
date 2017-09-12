@@ -1,0 +1,14 @@
+Como Compilar
+=============
+
+for (int i = 0; ...) ---> esto es de c99
+
+agregar flag --std=c99 o tmb sacar la declaracion del for (ie el 'int')
+
+compilar en el mini famaf porque las computadoras del laboratorio no tienen
+instalado el mpi... ==> instalar en mi casa el Openmpi
+
+--------------------------------------------
+
+para conectar con el servidor del mini
+ssh://mini.famaf.unc.edu.ar

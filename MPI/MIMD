@@ -1,0 +1,15 @@
+MIMD
+----
+
+medir tiempo: * gettimeofday()
+              * clock()
+              * MPI_met_wtime()
+
+BLAS: * Basic
+      * Linear
+      * Algebra
+      * Subprograms
+      
+Tamaño: * # nucleos
+        * frecuencia
+        * cantidad vectores

@@ -1,0 +1,38 @@
+
+build/output.elf:     file format elf32-littlearm
+
+
+Disassembly of section .init:
+
+00008000 <_start>:
+    8000:	e59f0068 	ldr	r0, [pc, #104]	; 8070 <loop$+0x40>
+    8004:	e3a01001 	mov	r1, #1
+    8008:	e3a03001 	mov	r3, #1
+    800c:	e1a03183 	lsl	r3, r3, #3
+    8010:	e1811003 	orr	r1, r1, r3
+    8014:	e1a03783 	lsl	r3, r3, #15
+    8018:	e1811003 	orr	r1, r1, r3
+    801c:	e1a03183 	lsl	r3, r3, #3
+    8020:	e1811003 	orr	r1, r1, r3
+    8024:	e5801004 	str	r1, [r0, #4]
+    8028:	e3a01000 	mov	r1, #0
+    802c:	e5801008 	str	r1, [r0, #8]
+
+00008030 <loop$>:
+    8030:	e5902034 	ldr	r2, [r0, #52]	; 0x34
+    8034:	e2022401 	and	r2, r2, #16777216	; 0x1000000
+    8038:	e3320401 	teq	r2, #16777216	; 0x1000000
+    803c:	1afffffb 	bne	8030 <loop$>
+    8040:	e3a0100a 	mov	r1, #10
+    8044:	e3a04001 	mov	r4, #1
+    8048:	e1a04504 	lsl	r4, r4, #10
+    804c:	e1811004 	orr	r1, r1, r4
+    8050:	e1a04084 	lsl	r4, r4, #1
+    8054:	e1811004 	orr	r1, r1, r4
+    8058:	e1a04284 	lsl	r4, r4, #5
+    805c:	e1811004 	orr	r1, r1, r4
+    8060:	e1a04084 	lsl	r4, r4, #1
+    8064:	e1811004 	orr	r1, r1, r4
+    8068:	e580101c 	str	r1, [r0, #28]
+    806c:	eaffffef 	b	8030 <loop$>
+    8070:	20200000 	.word	0x20200000
